@@ -95,7 +95,7 @@ function Start() {
     	if(arr.indexOf(r) === -1) arr.push(r);
     }
     for (let a = 1; a < 26; a++) {
-        let number = arr[a]
+        let number = arr[a-1]
         let cell = IdGet(a)
         cell.textContent = number
         const ID = cell.id
