@@ -89,8 +89,13 @@ function IdGet(Id) {
 
 function Start() {
     ChangeColour()
+    var arr = [];
+    while(arr.length < 25){
+    	var r = Math.floor(Math.random() * 100) + 1;
+    	if(arr.indexOf(r) === -1) arr.push(r);
+    }
     for (let a = 1; a < 26; a++) {
-        let number = Roll()
+        let number = arr[a]
         let cell = IdGet(a)
         cell.textContent = number
         const ID = cell.id
