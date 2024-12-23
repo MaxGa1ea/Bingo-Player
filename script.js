@@ -58,9 +58,9 @@ let Numbers = []
 function ChangeColour() {
 	let colour = localStorage.getItem("Colour")
 	if (!colour) {
-		colour = 0
+		colour = 3
 	} else if (colour >= Colours["Amount"]) {
-		colour = 0
+		colour = 3
 	}
 	document.documentElement.style.setProperty('--main', Colours["Palletes"][colour]["Main"]);
 	document.documentElement.style.setProperty('--light', Colours["Palletes"][colour]["Light"]);
