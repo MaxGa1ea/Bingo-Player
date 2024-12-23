@@ -17,7 +17,7 @@ table, tr, td {
 }
 
 td {
-    font-size: 48px;
+    font-size: 128px;
     background: var(--main);
     color: var(--contrast);
     font-weight: bold;
